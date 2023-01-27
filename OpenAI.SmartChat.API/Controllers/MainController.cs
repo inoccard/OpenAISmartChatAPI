@@ -1,5 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.ModelBinding;
+using OpenAI.GPT3.ObjectModels;
+using OpenAI.SmartChat.API.Utils;
 
 namespace OpenAI.SmartChat.API.Controllers;
 
@@ -10,10 +12,9 @@ public abstract class MainController : ControllerBase
 
     protected ActionResult CustomResponse(object? result = null)
     {
-        if (ValidOperation())
-            return Ok(result);
-
-        return BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
+        return ValidOperation()
+            ? Ok(result)
+            : BadRequest(new ValidationProblemDetails(new Dictionary<string, string[]>
             {
                 { "Messages: ", Erros.ToArray() }
             }));
@@ -40,4 +41,12 @@ public abstract class MainController : ControllerBase
     /// Limpar erros
     /// </summary>
     protected void ClearProcessingError() => Erros.Clear();
+
+    protected string SetTypeFormat(ResponseFormat type)
+        => type switch
+        {
+            ResponseFormat.Url => StaticValues.ImageStatics.ResponseFormat.Url,
+            ResponseFormat.Base64 => StaticValues.ImageStatics.ResponseFormat.Base64,
+            _ => throw new Exception("Invalid image return type. Choose 1: url or 2: Base64"),
+        };
 }

@@ -12,4 +12,3 @@ public static class CultureConfig
         app.UseRequestLocalization(localizationOptions);
     }
 }
-

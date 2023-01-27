@@ -6,11 +6,8 @@ namespace OpenAI.SmartChat.API.Configs
     {
         public static void RegisterComponents(this IServiceCollection services)
         {
-            #region Data
-
             services.AddScoped<ISmartChatService, SmartChatService>();
 
-            #endregion
         }
     }
 }

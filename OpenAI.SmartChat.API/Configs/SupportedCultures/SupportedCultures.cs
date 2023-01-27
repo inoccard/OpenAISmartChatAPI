@@ -4,4 +4,3 @@ public class SupportedCultures
 {
     public string[] Cultures { get; set; }
 }
-

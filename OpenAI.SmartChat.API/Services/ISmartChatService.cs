@@ -1,4 +1,6 @@
-﻿namespace OpenAI.SmartChat.API.Services;
+﻿using static OpenAI.GPT3.ObjectModels.ResponseModels.ImageResponseModel.ImageCreateResponse;
+
+namespace OpenAI.SmartChat.API.Services;
 
 public interface ISmartChatService
 {
@@ -15,4 +17,12 @@ public interface ISmartChatService
     /// <param name="textos"></param>
     /// <returns></returns>
     public Task<string> AskQuestions(string[] textos);
+
+    /// <summary>
+    /// search images
+    /// </summary>
+    /// <param name="text"></param>
+    /// <param name="imageResultLimit"></param>
+    /// <returns></returns>
+    public Task<List<ImageDataResult>> SearchImages(string text, short imageResultLimit, string responseFormat);
 }

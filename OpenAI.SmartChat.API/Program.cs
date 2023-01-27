@@ -1,8 +1,9 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Mvc.ApiExplorer;
-using OpenAI.SmartChat.API.Configs;
-using OpenAI.SmartChat.API.Configs.Swagger;
 using OpenAI.GPT3.Extensions;
+using OpenAI.SmartChat.API.Configs;
 using OpenAI.SmartChat.API.Configs.SupportedCultures;
+using OpenAI.SmartChat.API.Configs.Swagger;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -17,6 +18,7 @@ builder.Services.AddVersionedSwagger();
 builder.Services.AddCors();
 builder.Services.AddOpenAIService();
 builder.Services.RegisterComponents();
+builder.Services.AddAutoMapper();
 
 var app = builder.Build();
 
