@@ -9,14 +9,14 @@ public interface ISmartChatService
     /// </summary>
     /// <param name="texto"></param>
     /// <returns></returns>
-    public Task<string> AskQuestion(string texto);
+    public Task<string> AskQuestion(string text);
 
     /// <summary>
     /// Ask one or more questions
     /// </summary>
     /// <param name="textos"></param>
     /// <returns></returns>
-    public Task<string> AskQuestions(string[] textos);
+    public Task<string> AskQuestions(string[] texts);
 
     /// <summary>
     /// search images

@@ -11,14 +11,14 @@ namespace OpenAI.SmartChat.API.Services;
 
 public class SmartChatService : ISmartChatService
 {
-    public async Task<string> AskQuestion(string texto) => await AskQuestions(textos: new[] { texto });
+    public async Task<string> AskQuestion(string text) => await AskQuestions(new[] { text });
 
-    public async Task<string> AskQuestions(string[] textos)
+    public async Task<string> AskQuestions(string[] texts)
     {
         var completionResult = await InstantiateService()
             .Completions.CreateCompletion(new CompletionCreateRequest()
             {
-                PromptAsList = textos?.ToList(),
+                PromptAsList = texts?.ToList(),
                 Model = Models.TextDavinciV3,
                 Temperature = (float?)0.9,
                 PresencePenalty = (float?)0.6,
