@@ -112,7 +112,7 @@ public partial class SmartChatController : MainController
                 return CustomResponse();
             }
 
-            return CustomResponse(_mapper.Map<ImageResultDto>(response));
+            return CustomResponse(_mapper.Map<List<ImageResultDto>>(response));
         }
         catch (Exception ex)
         {
