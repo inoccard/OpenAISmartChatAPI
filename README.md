@@ -1,6 +1,6 @@
 # OpenAI.SmartChat.API
 
-##### English (En)
+## English (En)
 
 Simple reference API that implements [openai.com](https://openai.com) features to interact with ChatGPT. The API contains two main features:
 - Completions: For textual interaction
@@ -10,31 +10,33 @@ Simple reference API that implements [openai.com](https://openai.com) features t
 
 The project contains a WebAPI and a console application to test the API. You can use any other application (Mobile, Web or Desktop)
 
-## 💻Technologies
+### 💻Technologies
 
 - .NET Core 6
-     - ASP.NET WebAPI
-     - HttpClient
+    - ASP.NET WebAPI
+    - HttpClient
 
 - Components | services
-     - FluentValidation
-     - AutoMapper
-     - Betalgo.OpenAI.GPT3
-     - IdentityServer4.AccessTokenValidation
-     - Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
-     - Swashbuckle
+    - Culture config
+    - FluentValidation
+    - AutoMapper
+    - Betalgo.OpenAI.GPT3
+    - IdentityServer4.AccessTokenValidation
+    - Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
+    - Swashbuckle
+        - API version control with Swagger
 
 - Execution | accommodation
-     - IIS
-     - SelfHosting
+    - IIS
+    - SelfHosting
 
-## 💡 Architecture and Architectural Styles
+### 💡 Architecture and Architectural Styles
 
 - Clean Code
 - Domain notification
 - Domain validations
 
-## 🎮 Getting started
+### 🎮 Getting started
 
 - Clone SmartChat repository to your local machine
 - Open the project in Visual Studio
@@ -49,7 +51,7 @@ The project contains a WebAPI and a console application to test the API. You can
      - Press F5 or the green button (Start)
 - Or you can run each project separately
 
-## 💎 Pull-Requests
+### 💎 Pull-Requests
 
 Open an issue and let's discuss! Do not submit PRs for undiscussed or unapproved features.
 
@@ -57,7 +59,7 @@ If you want to help us, choose an approved issue and implement it.
 
 ---
 
-#### Portuguese (pt-BR)
+## Portuguese (pt-BR)
 
 API simples de referência que implementa os recursos da [openai.com](https://openai.com) para interagir com o ChatGPT. A API contém dois recursos principais:
 - Completions: Para interação textual
@@ -67,31 +69,33 @@ API simples de referência que implementa os recursos da [openai.com](https://op
 
 O projeto contém uma WebAPI e uma aplicação console para testar a API. Você pode utilizar qualquer outra aplicação (Mobile, Web ou Desktop)
 
-## 💻Tecnologias
+### 💻Tecnologias
 
 - .NET Core 6
     - ASP.NET WebAPI
     - HttpClient
 
 - Componentes | Serviços
+    - Config de cultura
     - FluentValidation
     - AutoMapper
     - Betalgo.OpenAI.GPT3
     - IdentityServer4.AccessTokenValidation
     - Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
     - Swashbuckle
+        - Controle de versão da API com Swagger
 
 - Execução | Hospedagem
     - IIS
     - SelfHosting
 
-## 💡 Arquitetura e Estilos Arquiteturais
+### 💡 Arquitetura e Estilos Arquiteturais
 
 - Código Limpo
 - Notificação de domínio
 - Validações de domínio
 
-## 🎮 Começando
+### 🎮 Começando
 
 - Faça o clone do repositório SmartChat para sua máquina local
 - Abra o projeto no Visual Studio
@@ -106,7 +110,7 @@ O projeto contém uma WebAPI e uma aplicação console para testar a API. Você 
     - Pressione F5 ou o botão verde (Comecar)
 - Ou você pode executar separadamente cada projeto
 
-## 💎 Pull-Requests
+### 💎 Pull-Requests
 
 Abra uma issue e vamos discutir! Não envie PRs para recursos não discutidos ou não aprovados.
 
@@ -114,7 +118,7 @@ Se você quiser nos ajudar, escolha um problema aprovado e implemente-o.
 
 ---
 
-#### Espanhol (Es)
+## Espanhol (Es)
 
 API de referencia simple que implementa funciones de [openai.com](https://openai.com) para interactuar con ChatGPT. La API contiene dos características principales:
 - Complementos: Para interacción textual
@@ -124,31 +128,33 @@ API de referencia simple que implementa funciones de [openai.com](https://openai
 
 El proyecto contiene una WebAPI y una aplicación de consola para probar la API. Puedes usar cualquier otra aplicación (Móvil, Web o Escritorio)
 
-## 💻Tecnologías
+### 💻Tecnologías
 
 - .NET Núcleo 6
      - ASP.NET WebAPI
      - HttpCliente
 
 - Componentes | servicios
-     - FluentValidation
-     - AutoMapeador
-     - Betalgo.OpenAI.GPT3
-     -IdentityServer4.AccessTokenValidation
-     - Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
-     - espadachín
+    - Configuración de la cultura
+    - FluentValidation
+    - AutoMapeador
+    - Betalgo.OpenAI.GPT3
+    -IdentityServer4.AccessTokenValidation
+    - Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer
+    - espadachín
+        - Control de versiones de API con Swagger
 
 - Ejecución | alojamiento
      -IIS
      - Autohospedaje
 
-## 💡 Arquitectura y Estilos Arquitectónicos
+### 💡 Arquitectura y Estilos Arquitectónicos
 
 - Código limpio
 - Notificación de dominio
 - Validaciones de dominio
 
-## 🎮 Empezando
+### 🎮 Empezando
 
 - Clone el repositorio de SmartChat en su máquina local
 - Abra el proyecto en Visual Studio
@@ -163,7 +169,7 @@ El proyecto contiene una WebAPI y una aplicación de consola para probar la API.
      - Presiona F5 o el botón verde (Iniciar)
 - O puede ejecutar cada proyecto por separado
 
-## 💎 Solicitudes de extracción
+### 💎 Solicitudes de extracción
 
 ¡Abre un problema y hablemos! No envíe PR para características no discutidas o no aprobadas.
 
