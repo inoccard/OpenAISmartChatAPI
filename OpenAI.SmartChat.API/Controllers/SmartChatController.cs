@@ -28,9 +28,9 @@ public partial class SmartChatController : MainController
     /// <returns></returns>
     [Consumes(MediaTypeNames.Application.Json)]
     [SwaggerResponse(StatusCodes.Status200OK, "", typeof(string))]
-    [SwaggerResponse(StatusCodes.Status400BadRequest, "", typeof(string))]
+    [SwaggerResponse(StatusCodes.Status400BadRequest)]
     [HttpGet("ask-a-question")]
-    public async Task<ActionResult> AskQuestion([FromQuery] string text)
+    public async Task<ActionResult<string>> AskQuestion([FromQuery] string text)
     {
         if (!ModelState.IsValid) return CustomResponse(ModelState);
 
@@ -58,7 +58,7 @@ public partial class SmartChatController : MainController
     /// <returns></returns>
     [Consumes(MediaTypeNames.Application.Json)]
     [SwaggerResponse(StatusCodes.Status200OK, "", typeof(string))]
-    [SwaggerResponse(StatusCodes.Status400BadRequest, "", typeof(string))]
+    [SwaggerResponse(StatusCodes.Status400BadRequest)]
     [HttpGet("ask-questions")]
     public async Task<ActionResult<string>> AskQuestions([FromQuery] string[] texts)
     {
@@ -90,7 +90,7 @@ public partial class SmartChatController : MainController
     /// <returns></returns>
     [Consumes(MediaTypeNames.Application.Json)]
     [SwaggerResponse(StatusCodes.Status200OK, "", typeof(List<ImageResultDto>))]
-    [SwaggerResponse(StatusCodes.Status400BadRequest, "", typeof(string))]
+    [SwaggerResponse(StatusCodes.Status400BadRequest)]
     [HttpGet("search-images/{limit}/{typeFormat}")]
     public async Task<ActionResult> SearchImages([FromQuery] string text, short limit = 2, ResponseFormat typeFormat = ResponseFormat.Url)
     {
