@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33103.184
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAI.SmartChat.API", "src\OpenAI.SmartChat.API\OpenAI.SmartChat.API.csproj", "{52C35333-76E8-4C63-ACCC-AADA26D6FBE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OpenAI.SmartChat.Console", "src\OpenAI.SmartChat.Console\OpenAI.SmartChat.Console.csproj", "{1B445EEC-0451-4039-847C-0B48067188ED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{52C35333-76E8-4C63-ACCC-AADA26D6FBE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52C35333-76E8-4C63-ACCC-AADA26D6FBE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52C35333-76E8-4C63-ACCC-AADA26D6FBE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52C35333-76E8-4C63-ACCC-AADA26D6FBE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B445EEC-0451-4039-847C-0B48067188ED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B445EEC-0451-4039-847C-0B48067188ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B445EEC-0451-4039-847C-0B48067188ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B445EEC-0451-4039-847C-0B48067188ED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9C9D90AB-55C3-4EDB-B198-7E507C401696}
+	EndGlobalSection
+EndGlobal
